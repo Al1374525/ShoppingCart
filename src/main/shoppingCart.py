@@ -17,6 +17,8 @@ class ShoppingCart():
     def check_out(self, cash_paid):
         if (cash_paid >= self.total):
             return cash_paid - self.total
+        else:
+            return "Insufficient funds being paid."
 
     
 
